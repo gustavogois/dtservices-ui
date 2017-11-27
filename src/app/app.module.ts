@@ -7,10 +7,12 @@ import {DataTableModule} from 'primeng/components/datatable/datatable';
 import {TooltipModule} from 'primeng/components/tooltip/tooltip';
 
 import { AppComponent } from './app.component';
+import { TiposdeservicoPesquisaComponent } from './tiposdeservico-pesquisa/tiposdeservico-pesquisa.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TiposdeservicoPesquisaComponent
   ],
   imports: [
     BrowserModule,
