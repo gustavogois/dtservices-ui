@@ -13,4 +13,15 @@
       <button pButton type="submit" label="Pesquisar"></button>
     </div>
   </div>
+
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <p-dataTable [value]="tiposDeServico">
+        <p-column field="nome" header="Pessoa"></p-column>
+        <p-column field="descricao" header="Descrição"></p-column>
+        <p-column field="valor" header="Valor" styleClass="col-valor"></p-column>
+      </p-dataTable>
+
+    </div>
+  </div>
 </div>
