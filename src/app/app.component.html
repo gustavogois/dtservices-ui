@@ -16,7 +16,7 @@
 
   <div class="ui-g">
     <div class="ui-g-12">
-      <p-dataTable [value]="tiposDeServico">
+      <p-dataTable [value]="tiposDeServico" [paginator]="true" [rows]="2">
         <p-column field="nome" header="Pessoa"></p-column>
         <p-column field="descricao" header="Descrição"></p-column>
         <p-column field="valor" header="Valor" styleClass="col-valor">
