@@ -17,11 +17,11 @@
     <div class="ui-g">
       <div class="ui-g-12">
         <p-dataTable [value]="tiposDeServico" [paginator]="true" [rows]="2" [responsive]="true">
-          <p-column field="nome" header="Pessoa"></p-column>
+          <p-column field="nome" header="Tipo"></p-column>
           <p-column field="descricao" header="Descrição"></p-column>
           <p-column field="valor" header="Valor" styleClass="col-valor">
             <ng-template let-tpserv="rowData" pTemplate="body">
-              <span [style.color]="tpserv.valor > 0 ? 'blue' : 'red'">{{tpserv.valor}}</span>
+              <span [style.color]="tpserv.valor > 0 ? 'blue' : 'red'">{{tpserv.valor | currency:symbol:'1.2-2'}}</span>
             </ng-template>
           </p-column>
           <p-column styleClass="col-acoes">
