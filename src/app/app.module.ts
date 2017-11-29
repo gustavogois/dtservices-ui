@@ -5,23 +5,27 @@ import {InputTextModule} from 'primeng/components/inputtext/inputtext';
 import {ButtonModule} from 'primeng/components/button/button';
 import {DataTableModule} from 'primeng/components/datatable/datatable';
 import {TooltipModule} from 'primeng/components/tooltip/tooltip';
+import {InputTextareaModule} from 'primeng/components/inputtextarea/inputtextarea';
 
 import { AppComponent } from './app.component';
 import { TiposdeservicoPesquisaComponent } from './tiposdeservico-pesquisa/tiposdeservico-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TipodeservicoCadastroComponent } from './tipodeservico-cadastro/tipodeservico-cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TiposdeservicoPesquisaComponent,
-    NavbarComponent
+    NavbarComponent,
+    TipodeservicoCadastroComponent
   ],
   imports: [
     BrowserModule,
     InputTextModule,
     ButtonModule,
     DataTableModule,
-    TooltipModule
+    TooltipModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
