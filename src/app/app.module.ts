@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { TiposdeservicoPesquisaComponent } from './tiposdeservico-pesquisa/tiposdeservico-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TipodeservicoCadastroComponent } from './tipodeservico-cadastro/tipodeservico-cadastro.component';
+import { PecaPesquisaComponent } from './peca-pesquisa/peca-pesquisa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TiposdeservicoPesquisaComponent,
     NavbarComponent,
-    TipodeservicoCadastroComponent
+    TipodeservicoCadastroComponent,
+    PecaPesquisaComponent
   ],
   imports: [
     BrowserModule,

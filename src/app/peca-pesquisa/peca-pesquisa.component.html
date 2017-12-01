@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <h1>Peças</h1>
+    </div>
+
+    <div class="ui-g-12 ui-fluid">
+      <label>Categoria</label>
+      <input type="text" pInputText>
+    </div>
+    <div class="ui-g-12 ui-fluid">
+      <label>Nome</label>
+      <input type="text" pInputText>
+    </div>
+
+    <div class="ui-g-12">
+      <button pButton type="submit" label="Pesquisar"></button>
+    </div>
+  </div>
+
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <p-dataTable [value]="peca" [paginator]="true" [rows]="10" [responsive]="true">
+        <p-column field="categoria" header="Categoria"></p-column>
+        <p-column field="nome" header="Nome"></p-column>
+        <p-column field="quantidade" header="Quantidade" styleClass="col-valor">
+          <ng-template let-peca="rowData" pTemplate="body">
+            <span [style.color]="peca.quantidade >= peca.minimo ? 'blue' : 'red'">{{peca.quantidade}}</span>
+          </ng-template>
+        </p-column>
+        <p-column field="minimo" header="Minimo" styleClass="col-valor"></p-column>
+        <p-column styleClass="col-acoes">
+          <ng-template pTemplate="body">
+            <a pButton icon="fa-pencil" pTooltip="Editar" tooltipPosition="top"></a>
+            <button pButton icon="fa-trash" pTooltip="Excluir" tooltipPosition="top"></button>
+          </ng-template>
+        </p-column>
+      </p-dataTable>
+    </div>
+
+    <div class="ui-g-12">
+        <a pButton label="Nova Peça"></a>
+      </div>
+
+  </div>
+
+</div>
