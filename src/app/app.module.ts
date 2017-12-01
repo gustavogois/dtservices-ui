@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TipodeservicoCadastroComponent } from './tipodeservico-cadastro/tipodeservico-cadastro.component';
 import { PecaPesquisaComponent } from './peca-pesquisa/peca-pesquisa.component';
 import { PecaCadastroComponent } from './peca-cadastro/peca-cadastro.component';
+import { SolicitantePesquisaComponent } from './solicitante-pesquisa/solicitante-pesquisa.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PecaCadastroComponent } from './peca-cadastro/peca-cadastro.component';
     NavbarComponent,
     TipodeservicoCadastroComponent,
     PecaPesquisaComponent,
-    PecaCadastroComponent
+    PecaCadastroComponent,
+    SolicitantePesquisaComponent
   ],
   imports: [
     BrowserModule,
