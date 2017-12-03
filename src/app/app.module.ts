@@ -9,6 +9,7 @@ import {TooltipModule} from 'primeng/components/tooltip/tooltip';
 import {InputTextareaModule} from 'primeng/components/inputtextarea/inputtextarea';
 import {TabViewModule} from 'primeng/components/tabview/tabview';
 import {CalendarModule} from 'primeng/components/calendar/calendar';
+import {DropdownModule} from 'primeng/components/dropdown/dropdown';
 
 import { AppComponent } from './app.component';
 import { TiposdeservicoPesquisaComponent } from './tiposdeservico-pesquisa/tiposdeservico-pesquisa.component';
@@ -47,7 +48,8 @@ import { ServicoCadastroComponent } from './servico-cadastro/servico-cadastro.co
     TooltipModule,
     InputTextareaModule,
     TabViewModule,
-    CalendarModule
+    CalendarModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

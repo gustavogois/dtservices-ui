@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './processo-cadastro.component.html',
   styleUrls: ['./processo-cadastro.component.css']
 })
-export class ProcessoCadastroComponent implements OnInit {
+export class ProcessoCadastroComponent {
 
-  constructor() { }
+    tipoImovel = [
+    { label: 'Apartamento', value: 1},
+    { label: 'Moradia', value: 2}
+  ];
 
-  ngOnInit() {
-  }
 
 }
