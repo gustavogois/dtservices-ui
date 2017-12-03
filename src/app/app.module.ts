@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import {InputTextModule} from 'primeng/components/inputtext/inputtext';
@@ -7,6 +8,7 @@ import {DataTableModule} from 'primeng/components/datatable/datatable';
 import {TooltipModule} from 'primeng/components/tooltip/tooltip';
 import {InputTextareaModule} from 'primeng/components/inputtextarea/inputtextarea';
 import {TabViewModule} from 'primeng/components/tabview/tabview';
+import {CalendarModule} from 'primeng/components/calendar/calendar';
 
 import { AppComponent } from './app.component';
 import { TiposdeservicoPesquisaComponent } from './tiposdeservico-pesquisa/tiposdeservico-pesquisa.component';
@@ -38,12 +40,14 @@ import { ServicoCadastroComponent } from './servico-cadastro/servico-cadastro.co
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     InputTextModule,
     ButtonModule,
     DataTableModule,
     TooltipModule,
     InputTextareaModule,
-    TabViewModule
+    TabViewModule,
+    CalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
