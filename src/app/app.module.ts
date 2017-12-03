@@ -19,6 +19,7 @@ import { SolicitanteCadastroComponent } from './solicitante-cadastro/solicitante
 import { ProcessoPesquisaComponent } from './processo-pesquisa/processo-pesquisa.component';
 import { ProcessoCadastroComponent } from './processo-cadastro/processo-cadastro.component';
 import { ServicoPesquisaComponent } from './servico-pesquisa/servico-pesquisa.component';
+import { ServicoCadastroComponent } from './servico-cadastro/servico-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ServicoPesquisaComponent } from './servico-pesquisa/servico-pesquisa.co
     SolicitanteCadastroComponent,
     ProcessoPesquisaComponent,
     ProcessoCadastroComponent,
-    ServicoPesquisaComponent
+    ServicoPesquisaComponent,
+    ServicoCadastroComponent
   ],
   imports: [
     BrowserModule,
