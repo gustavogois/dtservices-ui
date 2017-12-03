@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <h1>Processos</h1>
+    </div>
+
+    <div class="ui-g-6 ui-md-3 ui-fluid">
+      <label>Cód. Externo</label>
+      <input type="text" pInputText>
+    </div>
+    <div class="ui-g-6 ui-md-3 ui-fluid">
+      <label>Cód. Interno</label>
+      <input type="text" pInputText>
+    </div>
+    <div class="ui-g-6 ui-md-3 ui-fluid">
+      <label>Solicitante</label>
+      <input type="text" pInputText>
+    </div>
+    <div class="ui-g-6 ui-md-3 ui-fluid">
+      <label>Estado</label>
+      <input type="text" pInputText>
+    </div>
+
+    <div class="ui-g-12">
+      <button pButton type="submit" label="Pesquisar"></button>
+    </div>
+  </div>
+
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <p-dataTable [value]="processos" [paginator]="true" [rows]="10" [responsive]="true">
+        <p-column field="codExterno" header="Cód. Externo"></p-column>
+        <p-column header="Cód. Interno">
+          <ng-template let-proc="rowData" pTemplate="body">
+            {{proc.siglaSolicitante + '-' + proc.id}}
+          </ng-template>
+        </p-column>
+        <p-column field="solicitante" header="Solicitante"></p-column>
+        <p-column field="estado" header="Estado"></p-column>
+        <p-column field="dataLimite" header="Limite"  styleClass="col-data">
+          <ng-template let-proc="rowData" pTemplate="body">
+            <span>{{ proc.dataLimite | date:'dd/MM/yyyy' }}</span>
+          </ng-template>
+        </p-column>
+        <p-column styleClass="col-acoes">
+          <ng-template pTemplate="body">
+            <a pButton icon="fa-pencil" pTooltip="Editar" tooltipPosition="top"></a>
+            <button pButton icon="fa-trash" pTooltip="Excluir" tooltipPosition="top"></button>
+          </ng-template>
+        </p-column>
+      </p-dataTable>
+    </div>
+
+    <div class="ui-g-12">
+        <a pButton label="Novo Solicitante"></a>
+      </div>
+
+  </div>
+
+</div>

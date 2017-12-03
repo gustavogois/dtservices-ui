@@ -15,6 +15,7 @@ import { PecaPesquisaComponent } from './peca-pesquisa/peca-pesquisa.component';
 import { PecaCadastroComponent } from './peca-cadastro/peca-cadastro.component';
 import { SolicitantePesquisaComponent } from './solicitante-pesquisa/solicitante-pesquisa.component';
 import { SolicitanteCadastroComponent } from './solicitante-cadastro/solicitante-cadastro.component';
+import { ProcessoPesquisaComponent } from './processo-pesquisa/processo-pesquisa.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SolicitanteCadastroComponent } from './solicitante-cadastro/solicitante
     PecaPesquisaComponent,
     PecaCadastroComponent,
     SolicitantePesquisaComponent,
-    SolicitanteCadastroComponent
+    SolicitanteCadastroComponent,
+    ProcessoPesquisaComponent
   ],
   imports: [
     BrowserModule,
