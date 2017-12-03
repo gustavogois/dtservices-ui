@@ -18,6 +18,7 @@ import { SolicitantePesquisaComponent } from './solicitante-pesquisa/solicitante
 import { SolicitanteCadastroComponent } from './solicitante-cadastro/solicitante-cadastro.component';
 import { ProcessoPesquisaComponent } from './processo-pesquisa/processo-pesquisa.component';
 import { ProcessoCadastroComponent } from './processo-cadastro/processo-cadastro.component';
+import { ServicoPesquisaComponent } from './servico-pesquisa/servico-pesquisa.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProcessoCadastroComponent } from './processo-cadastro/processo-cadastro
     SolicitantePesquisaComponent,
     SolicitanteCadastroComponent,
     ProcessoPesquisaComponent,
-    ProcessoCadastroComponent
+    ProcessoCadastroComponent,
+    ServicoPesquisaComponent
   ],
   imports: [
     BrowserModule,
