@@ -30,3 +30,12 @@ label {
   width: 90px;
   text-align: center;
 }
+
+a {
+  color: #3337ab7;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
