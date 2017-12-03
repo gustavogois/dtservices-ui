@@ -1,0 +1,86 @@
+<div class="container">
+  <form>
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <h1>Processo</h1>
+      </div>
+      <p-tabView>
+        <p-tabPanel header="Info">
+          <div class="ui-g-4 ui-md-3 ui-fluid">
+            <label>Cód. Externo</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-4 ui-md-3 ui-fluid">
+            <label>Cód. Interno</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-4 ui-md-3 ui-fluid">
+            <label>Estado</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-8 ui-md-6 ui-fluid">
+            <label>Solicitante</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-4 ui-md-3 ui-fluid">
+            <label>Data Limite</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-8 ui-md-6 ui-fluid">
+            <label>Tipo do Imóvel</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-4 ui-md-3 ui-fluid">
+            <label>CRP</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-12 ui-md-9 ui-fluid">
+            <label>Observações</label>
+            <textarea pInputTextarea rows="3"></textarea>
+          </div>
+        </p-tabPanel>
+        <p-tabPanel header="Endereço">
+          <div class="ui-g-6 ui-md-4 ui-fluid">
+            <label>Latitude</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-6 ui-md-4 ui-fluid">
+            <label>Longitude</label>
+            <div class="ui-inputgroup">
+              <input pInputText type="text">
+              <button pButton type="button" icon="fa-level-down"></button>
+            </div>
+          </div>
+          <div class="ui-g-12 ui-md-8 ui-fluid">
+            <label>Código postal</label>
+            <div class="ui-inputgroup">
+              <input pInputText type="text">
+              <button pButton type="button" icon="fa-level-down"></button>
+            </div>
+          </div>
+          <div class="ui-g-12 ui-md-9 ui-fluid">
+            <label>Rua</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-12 ui-md-9 ui-fluid">
+            <label>Complemento</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-6 ui-md-4 ui-fluid">
+            <label>Concelho</label>
+            <input pInputText type="text">
+          </div>
+          <div class="ui-g-6 ui-md-4 ui-fluid">
+            <label>Distrito</label>
+            <input pInputText type="text">
+          </div>
+        </p-tabPanel>
+      </p-tabView>
+      <div class="ui-g-12">
+        <button pButton type="submit" label="Salvar"></button>
+        <button pButton type="button" label="Novo" class="ui-button-info"></button>
+        <a href="javascript:;">Voltar para a pesquisa</a>
+      </div>
+    </div>
+  </form>
+</div>

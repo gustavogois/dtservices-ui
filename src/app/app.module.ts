@@ -6,6 +6,7 @@ import {ButtonModule} from 'primeng/components/button/button';
 import {DataTableModule} from 'primeng/components/datatable/datatable';
 import {TooltipModule} from 'primeng/components/tooltip/tooltip';
 import {InputTextareaModule} from 'primeng/components/inputtextarea/inputtextarea';
+import {TabViewModule} from 'primeng/components/tabview/tabview';
 
 import { AppComponent } from './app.component';
 import { TiposdeservicoPesquisaComponent } from './tiposdeservico-pesquisa/tiposdeservico-pesquisa.component';
@@ -16,6 +17,7 @@ import { PecaCadastroComponent } from './peca-cadastro/peca-cadastro.component';
 import { SolicitantePesquisaComponent } from './solicitante-pesquisa/solicitante-pesquisa.component';
 import { SolicitanteCadastroComponent } from './solicitante-cadastro/solicitante-cadastro.component';
 import { ProcessoPesquisaComponent } from './processo-pesquisa/processo-pesquisa.component';
+import { ProcessoCadastroComponent } from './processo-cadastro/processo-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { ProcessoPesquisaComponent } from './processo-pesquisa/processo-pesquisa
     PecaCadastroComponent,
     SolicitantePesquisaComponent,
     SolicitanteCadastroComponent,
-    ProcessoPesquisaComponent
+    ProcessoPesquisaComponent,
+    ProcessoCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { ProcessoPesquisaComponent } from './processo-pesquisa/processo-pesquisa
     ButtonModule,
     DataTableModule,
     TooltipModule,
-    InputTextareaModule
+    InputTextareaModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
